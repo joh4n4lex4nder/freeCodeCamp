@@ -1,0 +1,23 @@
+$font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
+
+$primary:#733FC8;
+$success: #49556B;
+$dark: #231F20;
+$secondary: #EDF2F8;
+
+.bg-card {
+    background-image: url('../images/bg-pattern.jpg');
+    background-repeat: no-repeat;
+    background-position: 77% top;
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px
+);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
