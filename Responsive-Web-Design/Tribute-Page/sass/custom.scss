@@ -11,6 +11,11 @@ $secondary: #EDF2F8;
     background-position: 77% top;
 }
 
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
