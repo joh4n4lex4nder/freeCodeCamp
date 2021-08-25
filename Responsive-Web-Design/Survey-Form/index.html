@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Formulario encuesta</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">
+          Formulario de encuesta: El Universo
+        </h1>
+        <p id="description" class="description text-center">
+          Descubre qué tanto conoces sobre el espacio exterior...
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="name"
+            class="form-control"
+            placeholder="Ingrese su nombre completo"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Correo</label>
+          <input
+            type="email"
+            name="correo"
+            id="email"
+            class="form-control"
+            placeholder="Ingrese su correo"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Edad<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="edad"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Ingrese su edad"
+          />
+        </div>
+        <div class="question-group">
+          <p>Selecciona tu rol para jugar</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Escoge un rol...</option>
+            <option value="astronauta">Astronauta</option>
+            <option value="alien">Alienígena</option>
+            <option value="serSuperior">Ser superior</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="question-group">
+          <p>
+            Cuál es el planeta que tiene la mayor temperatura superficial de nuestro Sistema Solar?
+          </p>
+          <label for="marte">
+            <input
+              id="marte"
+              type="radio"
+              name="radio-group"
+              class="input-radio"
+              required
+            />Marte
+          </label>
+          <label for="jupiter">
+            <input
+              id="jupiter"
+              type="radio"
+              name="radio-group"
+              class="input-radio"
+              required
+            />Júpiter
+          </label>
+          <label for="venus">
+            <input
+              id="venus"
+              type="radio"
+              name="radio-group"
+              class="input-radio"
+              required
+            />Venus
+          </label>
+          <label for="mercurio">
+            <input
+              id="mercurio"
+              type="radio"
+              name="radio-group"
+              class="input-radio"
+              required
+            />Mercurio
+          </label>
+        </div>
+        <div class="question-group">
+          <p>Las lunas de los planetas también se conocen como...</p>
+          <select id="dropdown" name="lunas" class="form-control" required>
+            <option disabled selected value>Escoge una opción</option>
+            <option value="asteroide">Asteroides</option>
+            <option value="sateliteNat">Satélites naturales</option>
+            <option value="estrella">Estrellas</option>
+            <option value="sateliteArt">Satélites artificiales</option>
+          </select>
+        </div>
+        <div class="question-group">
+          <p>El color de una estrella permite determinar su...</p>
+          <label for="temperatura">
+            <input
+              id="temperatura"
+              type="radio"
+              name="radio-group"
+              class="input-radio"
+              required
+            />Temperatura
+          </label>
+          <label for="composicion">
+            <input
+              id="composicion"
+              type="radio"
+              name="radio-group"
+              class="input-radio"
+              required
+            />Composición
+          </label>
+          <label for="tamaño">
+            <input
+              id="tamaño"
+              type="radio"
+              name="radio-group"
+              class="input-radio"
+              required
+            />Tamaño
+          </label>
+          <label for="densidad">
+            <input
+              id="densidad"
+              type="radio"
+              name="radio-group"
+              class="input-radio"
+              required
+            />Densidad
+          </label>
+        </div>
+        <div class="question-group">
+          <p>
+            Cuáles son tus objetos estelares favoritos?<span class="pista"
+              >(Escoge las que aplican)</span
+            >
+          </p>
+          <label for="planeta">
+            <input
+              id="planeta"
+              type="checkbox"
+              name="check-group"
+              value="planeta"
+              class="input-check"
+            />Planeta
+          </label>
+          <label for="meteorito">
+            <input
+              id="meteorito"
+              type="checkbox"
+              name="check-group"
+              value="meteorito"
+              class="input-check"
+            />Meteorito
+          </label>
+          <label for="luna">
+            <input
+              id="luna"
+              type="checkbox"
+              name="check-group"
+              value="luna"
+              class="input-check"
+            />Luna
+          </label>
+          <label for="estrella">
+            <input
+              id="estrella"
+              type="checkbox"
+              name="check-group"
+              value="estrella"
+              class="input-check"
+            />Estrella
+          </label>
+          <label for="cometa">
+            <input
+              id="cometa"
+              type="checkbox"
+              name="check-group"
+              value="cometa"
+              class="input-check"
+            />Cometa
+          </label>
+          <label for="agujero-negro">
+            <input
+              id="agujero-negro"
+              type="checkbox"
+              name="check-group"
+              value="agujero-negro"
+              class="input-check"
+            />Agujero negro
+          </label>
+          <label for="galaxia">
+            <input
+              id="galaxia"
+              type="checkbox"
+              name="check-group"
+              value="galaxia"
+              class="input-check"
+            />Galaxia
+          </label>
+          <label for="nebulosa">
+            <input
+              id="nebulosa"
+              type="checkbox"
+              name="check-group"
+              value="nebulosa"
+              class="input-check"
+            />Nebulosa
+          </label>
+          <label for="cumulo-estelar">
+            <input
+              id="cumulo-estelar"
+              type="checkbox"
+              name="check-group"
+              value="cumulo-estelar"
+              class="input-check"
+            />Cúmulo estelar
+          </label>
+          <label for="constelacion">
+            <input
+              id="constelacion"
+              type="checkbox"
+              name="check-group"
+              value="constelacion"
+              class="input-check"
+            />Constelación
+          </label>
+        </div>
+        <div class="question-group">
+          <p>Tienes algún comentario o sugerencia?</p>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="5"
+            placeholder="Escribe tu comentario aquí..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
